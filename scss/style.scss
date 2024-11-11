@@ -1,0 +1,66 @@
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixins";
+@import "./base/reset";
+@import "./base/tipografias";
+@import "./layout/header";
+@import "./layout/encabezados";
+@import "./layout/main";
+@import "./layout/pronostico";
+@import "./layout/contacto";
+@import "./layout/footer";
+@import "./components/navbar";
+@import "./components/bootstrap";
+
+.container-servicios{
+    display: flex;
+    min-height: 540px;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    background-image: linear-gradient(to right bottom, #78d2e5, #61bfda, #4cadcf, #379ac3, #2288b7, #197bab, #106fa0, #056394, #045a86, #035179, #03486c, #033f5f);
+}
+.card-container{
+    width: 375px;
+    height: 450px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card-container h3{
+    padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.card-container h4{
+    color: #086fa6;
+    border: none;
+    padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.card-container p{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.card-container div{
+    width: 100%;
+    height: 180px;
+}
+.card-container div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px 16px 0 0;
+    object-fit: cover;
+}
+.article{
+    position: relative;
+}
+@import "./layout/mediaQ/media1096";
+@import "./layout/mediaQ/media768";
+@import "./layout/mediaQ/media320";
